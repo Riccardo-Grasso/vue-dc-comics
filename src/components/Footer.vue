@@ -5,8 +5,8 @@
         <li class="footer-icons" v-for="(icon, i) in footerIcons" :key="i">
           <a :href="icon.href">
             <img :src="icon.img" :alt="icon.alt" />
-            <div>{{ icon.text }}</div></a
-          >
+            <div>{{ icon.text }}</div>
+          </a>
         </li>
       </ul>
     </div>
@@ -28,7 +28,7 @@ export default {
         {
           img: "../assets/buy-comics-digital-comics.png",
           alt: "icon",
-          text: "DIGITAL COMICS",
+          text: "DC MERCHANDISE",
           href: "#",
         },
         {
