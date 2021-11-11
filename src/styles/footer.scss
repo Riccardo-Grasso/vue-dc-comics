@@ -10,7 +10,6 @@ footer {
         justify-content: center;
     
     }
-
     ul {
         width: 100%;
         display: flex;
@@ -42,10 +41,12 @@ footer {
     }
 
     .footer-list-container {
-
         background-color: $dc-dark-grey;
         height: $section-height*3;
         padding: 20px 15%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
 
         .link-container {
             display: flex;
@@ -92,8 +93,14 @@ footer {
             }
         }
 
+        .image-container {
+            img {
+                width:35%;
+                position: absolute;
+                top: -50px;
+            }
+        }
     }
-
     .social {
         background-color: $dc-light-grey;
         height: $section-height;

@@ -48,6 +48,9 @@
           </ul>
         </div>
       </div>
+      <div class="image-container">
+        <img src="../assets/dc-logo-bg.png" alt="logo-big" />
+      </div>
     </div>
 
     <div class="social">
