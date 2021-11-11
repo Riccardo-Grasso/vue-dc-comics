@@ -1,0 +1,10 @@
+footer {
+    background-color: $dc-blue;
+    height: $section-height * 1.3;
+    padding: $padding-top $padding-left;
+    height: $section-height;
+
+    li.footer-icons {
+        display: flex;
+    }
+}

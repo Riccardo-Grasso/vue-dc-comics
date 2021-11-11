@@ -7,7 +7,7 @@
     <div class="navbar">
       <ul>
         <li class="navbar-item" v-for="(item, i) in navbarLinks" :key="i">
-          <a href="item.href">{{ item.title }}</a>
+          <a :href="item.href">{{ item.title }}</a>
         </li>
       </ul>
     </div>
