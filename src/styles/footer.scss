@@ -94,10 +94,14 @@ footer {
         }
 
         .image-container {
-            img {
-                width:35%;
-                position: absolute;
-                top: -50px;
+           
+            width:35%;
+            position: absolute;
+            top: -50px;
+            right: 18%;
+
+            img{
+                width: 100%;
             }
         }
     }
