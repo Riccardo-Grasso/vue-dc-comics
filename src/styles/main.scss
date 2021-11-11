@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+main {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    height: $section-height;
+    background-color: $dc-dark-grey;
+    display: flex;
+    align-items: center;
+
+    .content {
+
+        color: white;
+    }
+
+}

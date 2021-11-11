@@ -1,6 +1,9 @@
 <template>
   <header>
-    <img src="../assets/dc-logo.png" alt="DC_Logo" />
+    <div class="navbar-logo">
+      <img src="../assets/dc-logo.png" alt="DC_Logo" />
+    </div>
+
     <div class="navbar">
       <ul>
         <li class="navbar-item" v-for="(item, i) in navbarLinks" :key="i">

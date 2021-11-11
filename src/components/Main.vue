@@ -1,5 +1,7 @@
 <template>
-  <main></main>
+  <main>
+    <h2 class="content">-->Content goes here--</h2>
+  </main>
 </template>
 
 <script>
