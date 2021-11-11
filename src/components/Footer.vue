@@ -11,7 +11,44 @@
       </ul>
     </div>
 
-    <div class="footer-list-container">fdgdfg</div>
+    <div class="footer-list-container">
+      <div class="link-container">
+        <div class="col-1">
+          <div class="col-top">
+            <div class="title">DC COMICS</div>
+            <ul>
+              <li class="links" v-for="(element, i) in linkTop" :key="i">
+                <a :href="element.href">{{ element.link }}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-bottom">
+            <div class="title">SHOP</div>
+            <ul>
+              <li class="links" v-for="(element, i) in linkBottom" :key="i">
+                <a :href="element.href">{{ element.link }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="title">DC</div>
+          <ul>
+            <li class="links" v-for="(element, i) in linkCentral" :key="i">
+              <a :href="element.href">{{ element.link }}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="title">SITES</div>
+          <ul>
+            <li class="links" v-for="(element, i) in linkRight" :key="i">
+              <a :href="element.href">{{ element.link }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div class="social">
       <div class="sign-up-button">
@@ -91,6 +128,39 @@ export default {
           src: require("../assets/footer-periscope.png"),
           alt: "facebook",
         },
+      ],
+      linkTop: [
+        { link: "Characters", href: "#" },
+        { link: "Comics", href: "#" },
+        { link: "Movies", href: "#" },
+        { link: "TV", href: "#" },
+        { link: "Games", href: "#" },
+        { link: "Videos", href: "#" },
+        { link: "News", href: "#" },
+      ],
+      linkBottom: [
+        { link: "Shop DC", href: "#" },
+        { link: "Shop DC Collectibles", href: "#" },
+      ],
+      linkCentral: [
+        { link: "Terms Of Use", href: "#" },
+        { link: "Privacy policy (New)", href: "#" },
+        { link: "Ad Choices", href: "#" },
+        { link: "Advertising", href: "#" },
+        { link: "Jobs", href: "#" },
+        { link: "Subscriptions", href: "#" },
+        { link: "Talent Workshops", href: "#" },
+        { link: "CPSC Certificates", href: "#" },
+        { link: "Ratings", href: "#" },
+        { link: "Shop Help", href: "#" },
+        { link: "ontact Us", href: "#" },
+      ],
+      linkRight: [
+        { link: "DC", href: "#" },
+        { link: "MAD Magazine", href: "#" },
+        { link: "DC Kids", href: "#" },
+        { link: "DC Universe", href: "#" },
+        { link: "DC Power Visa", href: "#" },
       ],
     };
   },
