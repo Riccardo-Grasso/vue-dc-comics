@@ -26,7 +26,9 @@ export default {
 @import "styles/main";
 @import "styles/footer";
 
-#app {
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>

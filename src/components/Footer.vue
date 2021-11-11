@@ -13,7 +13,23 @@
 
     <div class="footer-list-container">fdgdfg</div>
 
-    <div class="social"></div>
+    <div class="social">
+      <div class="sign-up-button">
+        <a href="#">SIGN-UP NOW!</a>
+      </div>
+      <div class="social-container">
+        <div class="follow-us">FOLLOW US</div>
+        <div class="social-list-container">
+          <ul>
+            <li class="social-icon" v-for="(social, i) in socialIcons" :key="i">
+              <a href="#">
+                <img :src="social.src" :alt="social.alt" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -52,6 +68,28 @@ export default {
           alt: "icon",
           text: "DC POWER VISA",
           href: "#",
+        },
+      ],
+      socialIcons: [
+        {
+          src: require("../assets/footer-facebook.png"),
+          alt: "facebook",
+        },
+        {
+          src: require("../assets/footer-twitter.png"),
+          alt: "facebook",
+        },
+        {
+          src: require("../assets/footer-youtube.png"),
+          alt: "facebook",
+        },
+        {
+          src: require("../assets/footer-pinterest.png"),
+          alt: "facebook",
+        },
+        {
+          src: require("../assets/footer-periscope.png"),
+          alt: "facebook",
         },
       ],
     };

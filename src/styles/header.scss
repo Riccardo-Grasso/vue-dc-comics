@@ -3,12 +3,19 @@
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-left: $padding-left;
     padding-right: $padding-right;
     height: $section-height;
 
-    .navbar-logo {
-        margin-right: 500px;
+
+     .navbar-logo {
+      height: 80px;
+      width: 80px; ;
+
+      img {
+        height: 100%;
+      }
     }
 
     .navbar {
