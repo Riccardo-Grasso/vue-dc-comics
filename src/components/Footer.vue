@@ -5,11 +5,15 @@
         <li class="footer-icons" v-for="(icon, i) in footerIcons" :key="i">
           <a :href="icon.href">
             <img :src="icon.img" :alt="icon.alt" />
-            <div>{{ icon.text }}</div>
+            <div class="icon-text">{{ icon.text }}</div>
           </a>
         </li>
       </ul>
     </div>
+
+    <div class="footer-list-container">fdgdfg</div>
+
+    <div class="social"></div>
   </footer>
 </template>
 
@@ -20,33 +24,33 @@ export default {
     return {
       footerIcons: [
         {
-          img: "../assets/buy-comics-digital-comics.png",
+          img: require("../assets/buy-comics-digital-comics.png"),
           alt: "icon",
           text: "DIGITAL COMICS",
           href: "#",
         },
         {
-          img: "../assets/buy-comics-digital-comics.png",
+          img: require("../assets/buy-comics-merchandise.png"),
           alt: "icon",
           text: "DC MERCHANDISE",
           href: "#",
         },
         {
-          img: "../assets/buy-comics-digital-comics.png",
+          img: require("../assets/buy-comics-subscriptions.png"),
           alt: "icon",
-          text: "DIGITAL COMICS",
+          text: "SUBSCRIPTION",
           href: "#",
         },
         {
-          img: "../assets/buy-comics-digital-comics.png",
+          img: require("../assets/buy-comics-shop-locator.png"),
           alt: "icon",
-          text: "DIGITAL COMICS",
+          text: "COMIC SHOP LOCATOR",
           href: "#",
         },
         {
-          img: "../assets/buy-comics-digital-comics.png",
+          img: require("../assets/buy-dc-power-visa.svg"),
           alt: "icon",
-          text: "DIGITAL COMICS",
+          text: "DC POWER VISA",
           href: "#",
         },
       ],

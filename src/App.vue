@@ -25,4 +25,8 @@ export default {
 @import "styles/header";
 @import "styles/main";
 @import "styles/footer";
+
+#app {
+  height: 100vh;
+}
 </style>

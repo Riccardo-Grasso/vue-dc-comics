@@ -1,10 +1,53 @@
+@import "variables.scss";
 footer {
-    background-color: $dc-blue;
-    height: $section-height * 1.3;
-    padding: $padding-top $padding-left;
-    height: $section-height;
 
-    li.footer-icons {
+    .footer-icons-container {
+        background-color: $dc-blue;
+        height: $section-height * 1.3;
+        padding: $padding-top $padding-left;
+        height: $section-height;
         display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        li.footer-icons {
+            width: calc(100% / 5);
+            display: flex;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+
+            img {
+                max-width: 100px;
+                max-height: 70px
+            }
+
+            .icon-text{
+                padding: 0 $padding-x;
+            }
+        }
+    }
+
+    .footer-list-container {
+        height: calc(100vh - 300px - 380px);
+        background-color: $dc-dark-grey;
+    }
+
+    .social {
+        background-color: $dc-light-grey;
+        height: $section-height;
     }
 }
