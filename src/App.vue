@@ -25,14 +25,11 @@ export default {
 @import "styles/header";
 @import "styles/main";
 @import "styles/footer";
+@import "styles/products";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-#app {
-  height: 100vh;
 }
 </style>

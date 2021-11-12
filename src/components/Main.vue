@@ -1,12 +1,30 @@
 <template>
   <main class="content-container">
-    <h2 class="content">-->Content goes here--</h2>
+    <Products
+      v-for="(product, i) in comicsList"
+      :key="i"
+      :img="product.thumb"
+      :title="product.series"
+      :price="product.price"
+      :type="product.type"
+    ></Products>
   </main>
 </template>
 
 <script>
+import jsonData from "../database/dc-comics.json";
+import Products from "../components/Products.vue";
+
 export default {
   name: "Main",
+  components: {
+    Products,
+  },
+  data() {
+    return {
+      comicsList: jsonData,
+    };
+  },
 };
 </script>
 
