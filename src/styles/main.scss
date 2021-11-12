@@ -6,6 +6,7 @@ main {
     background-color: $dc-dark-grey;
     display: flex;
     align-items: center;
+    height: calc(100vh - 756px);
 
     .content {
 
