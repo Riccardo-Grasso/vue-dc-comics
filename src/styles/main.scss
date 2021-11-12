@@ -4,7 +4,7 @@ main {
     background-color: $dc-dark-grey;
 
     .jumbotron {
-        height: 550px;
+        height: 400px;
         overflow: hidden;
 
         img {
@@ -40,14 +40,21 @@ main {
             .img-container {
             aspect-ratio: 1 / 1;
             overflow: hidden;
+            transition: transform .3s ease-out;                     
 
                 img {
                     width: 100%;
                 }
             }
 
-            h4 {
+            .img-container:hover {
+                transform: translate(0, -20px);
+            }
+
+            .comic-title {
                 color: white;
+                font-size: $font-size-big;
+                padding-top: 10px;
             }
         }
 

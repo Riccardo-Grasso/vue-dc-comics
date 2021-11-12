@@ -3,7 +3,7 @@
     <div class="img-container">
       <img :src="img" alt="product-image" />
     </div>
-    <h4>{{ title }}</h4>
+    <h4 class="comic-title">{{ title }}</h4>
   </div>
 </template>
 

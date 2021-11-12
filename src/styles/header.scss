@@ -24,13 +24,33 @@ header {
             list-style-type: none;
       
             li.navbar-item {
+              position: relative;
               a {
                 text-decoration: none;
                 font-weight: bold;
                 display: inline-block;
                 padding: $padding-y $padding-x;
-                color: $dc-dark-grey;
+              } 
+              &.blue-text {
+
+                .page-container {
+                  background-color: $dc-blue;
+                  height: 5px;
+                  width: 100%;
+                  position: absolute;
+                  bottom: -41px;
+                }
+                a{
+                  color: $dc-blue;
+                }
               }
+              &.dark-text {
+                a {
+                  color:$dc-dark-grey
+                }
+              }
+              
+              
             }
         }
     }

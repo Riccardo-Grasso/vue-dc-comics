@@ -4,7 +4,7 @@
       <ul>
         <li class="footer-icons" v-for="(icon, i) in footerIcons" :key="i">
           <a :href="icon.href">
-            <img :src="icon.img" :alt="icon.alt" />
+            <img class="icon-img" :src="icon.img" :alt="icon.alt" />
             <div class="icon-text">{{ icon.text }}</div>
           </a>
         </li>
