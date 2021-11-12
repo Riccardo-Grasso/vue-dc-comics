@@ -1,6 +1,8 @@
 <template>
   <div class="comic-container">
-    <img :src="img" alt="product-image" />
+    <div class="img-container">
+      <img :src="img" alt="product-image" />
+    </div>
     <h4>{{ title }}</h4>
   </div>
 </template>

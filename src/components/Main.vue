@@ -1,19 +1,24 @@
 <template>
   <main class="content-container">
-    <Products
-      v-for="(product, i) in comicsList"
-      :key="i"
-      :img="product.thumb"
-      :title="product.series"
-      :price="product.price"
-      :type="product.type"
-    ></Products>
+    <div class="jumbotron">
+      <img src="@/assets/jumbotron.jpg" alt="jumbo-img" />
+    </div>
+    <div class="comics-container">
+      <Products
+        v-for="(p, i) in comicsList"
+        :key="i"
+        :img="p.thumb"
+        :title="p.series"
+        :price="p.price"
+        :type="p.type"
+      ></Products>
+    </div>
   </main>
 </template>
 
 <script>
-import jsonData from "../database/dc-comics.json";
 import Products from "../components/Products.vue";
+import jsonData from "../database/dc-comics.json";
 
 export default {
   name: "Main",

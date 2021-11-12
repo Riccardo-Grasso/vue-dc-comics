@@ -1,13 +1,43 @@
 @import "variables.scss";
 
 main {
-    padding: $padding-top $padding-left;
     background-color: $dc-dark-grey;
-    display: flex;
-    align-items: center;
 
-    .content {
-        color: white;
+    .jumbotron {
+        height: 550px;
+        overflow: hidden;
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .comics-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: $padding-top $padding-left;
+        
+
+        .comic-container {
+            flex-basis: calc((100% / 6) - $my-gap);
+
+            .img-container {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+            
+            h4 {
+                color: white;
+            }
+        }
+
+        
     }
 
 }

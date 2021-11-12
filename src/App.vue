@@ -25,7 +25,6 @@ export default {
 @import "styles/header";
 @import "styles/main";
 @import "styles/footer";
-@import "styles/products";
 
 * {
   margin: 0;
