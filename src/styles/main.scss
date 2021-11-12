@@ -6,7 +6,6 @@ main {
     .jumbotron {
         height: 550px;
         overflow: hidden;
-        margin-bottom: 40px;
 
         img {
             width: 100%;
@@ -14,11 +13,26 @@ main {
     }
 
     .comics-container {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        padding: $padding-top $padding-left;
+        padding: 50px $padding-left;
         
+        .current-series {
+            width: 250px;
+            height: 40px;
+            background-color: $dc-blue;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            transform: translate(0, -50%);
+            left: 14%;
+        }
 
         .comic-container {
             flex-basis: calc((100% / 6) - $my-gap);
@@ -31,7 +45,7 @@ main {
                     width: 100%;
                 }
             }
-            
+
             h4 {
                 color: white;
             }
@@ -40,4 +54,25 @@ main {
         
     }
 
+    .row {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+
+        .load-more {
+            width: 150px;
+            height: 30px;
+            background-color: $dc-blue;
+            line-height: 30px;
+            text-align: center;
+    
+            a {
+                text-decoration: none;
+                color: white;
+                color: white;
+                padding: 10px 20px;
+            }
+        }
+    }
+    
 }
